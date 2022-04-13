@@ -17,3 +17,14 @@ make -j 16 ARCH=CRAY-XC40-gnu VERSION=psmp
 ```
 
 Executables will be created in `exe/` folder
+
+---
+
+# CP2K on Ubuntu
+
+Tested version: 9.1
+
+## Install toolchains
+```sh
+./install_cp2k_toolchain.sh -j 16 --with-gcc=system --with-openmpi --with-plumed
+```
